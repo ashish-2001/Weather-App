@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container" class="container">
+            <h2 id="heading" class="header">WEATHER APP</h2>
+            <div class="inputAndBtn">
+                <input type="text" placeholder="Enter city name!" id="inputCity" class="inputCity">
+                <div class="buttons">
+                    <button onclick="getCurrentLocationWeather()" id="location-Btn" class="Btn">My Location!</button>
+                    <button onclick="getWeatherData()" id="weather-Btn" class="btn">User Location!</button>
+                </div>
+            </div>
+            <div class="weatherInfo">
+                <img src="" id="countryFlag" class="countryImg">
+                <h2 id="cityName" class="cityName"></h2>
+                <div class="dateTime">
+                    <span id="date" class="date"></span>,
+                    <span id="time" class="time"></span>
+                </div>
+                <img src="" id="weatherImg" class="weatherImg">
+                <div class="weathers">
+                    <div class="allWeathers">
+                        <h3 id="tempDisc">Temperature</h3>
+                        <h4 id="temperature" class="weatherDescription"></h4>
+                    </div>
+                    <div class="allWeathers">
+                        <h3 id="humidDesc">Humidity</h3>
+                        <h4 id="humidity" class="weatherDescription"></h4>
+                    </div>
+                    <div class="allWeathers">
+                        <h3 id="skyTypeDesc">Description</h3>
+                        <h4 id="skyType" class="weatherDescription"></h4>
+                    </div>
+                    <div class="allWeathers">
+                        <h3 id="windSpeedDesc">Windspeed</h3>
+                        <h4 id="windSpeed" class="weatherDescription"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
